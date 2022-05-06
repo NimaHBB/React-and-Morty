@@ -1,8 +1,8 @@
 import React from "react";
-const HeaderDiv = ({clickFunc}) => {
+const HeaderDiv = ({ clickFunc }) => {
   return (
     <header>
-      <img src="logo.png" alt="Logo" />
+      <img src={require("../../src/logo.png")} alt="Logo" />
       <form className="form" action="">
         <select id="character-state">
           <option value="All">All</option>
@@ -18,7 +18,9 @@ const HeaderDiv = ({clickFunc}) => {
           placeholder="search by name"
         />
       </form>
-      <button className="header-btn" onClick={clickFunc}>Load Data</button>
+      <button className="header-btn" onClick={clickFunc}>
+        Load Data
+      </button>
     </header>
   );
 };
