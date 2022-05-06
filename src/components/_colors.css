@@ -1,6 +1,7 @@
 :root {
   /* Define your variable colors here */
   --Header-Footer-BC: #5d74bf;
-  --body-BC: #c0fffc;
+  --body-BC: #dff8f7;
   --button-header: #003468;
+  --card-BC: rgb(104, 0, 209, 0.5);
 }

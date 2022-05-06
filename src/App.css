@@ -26,15 +26,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: var(--Header-Footer-BC);
-  height: 15vh;
-}
-.header2 {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--Header-Footer-BC);
-  height: 5vh;
+  height: 12vh;
 }
 header img {
   margin: auto 10px;
@@ -47,12 +39,19 @@ button {
   background: purple;
   border: 0.2px solid salmon;
   color: white;
+  padding: 15px;
 }
 button:hover {
   background: white;
   border: 0.4px solid purple;
   color: purple;
   border-radius: 15px;
+}
+select {
+  font-size: 1em;
+}
+.search {
+  font-size: 1em;
 }
 .App header form {
   display: flex;
@@ -71,18 +70,36 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 7px;
 }
 .cards {
-  box-shadow: 5px 4px 5px rgba(0, 3, 153, 0.2);
-  background-color: azure;
-  width: 200px;
-  text-align: center;
+  box-shadow: 5px 4px 5px rgba(0, 3, 153, 0.1);
+  background-color: var(--card-BC);
+  width: 120px;
   border-radius: 15px;
+  position: relative;
 }
-.cards img {
+.CharacterImage {
   width: 100%;
   border-radius: 15px 15px 0 0;
+  border: 0.2px solid var(--card-BC);
+}
+.favStar{
+  width: 25px;
+  height: 25px;
+  display: flex;
+  position: absolute;
+  right: 1px;
+  bottom: 34px;
+  cursor:pointer;
+}
+.cardText{
+  max-height: 1rem;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  margin: 0 auto ;
+  padding: 0 auto;
 }
 
 footer {
